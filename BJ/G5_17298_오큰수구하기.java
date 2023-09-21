@@ -15,7 +15,7 @@ public class G5_17298_오큰수구하기 {
         String[] str = bf.readLine().split(" ");
 
         for(int i=0; i<n; i++){
-            ((A[i] = Integer.parseInt(str[i]);
+            A[i] = Integer.parseInt(str[i]);
         }
 
         Stack<Integer> myStack = new Stack<>();
