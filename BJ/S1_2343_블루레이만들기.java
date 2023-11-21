@@ -36,5 +36,6 @@ public class S1_2343_블루레이만들기 {
         }
         System.out.println(start);
 
+
     }
 }
