@@ -24,5 +24,6 @@ public class S2_1541_최솟값을만드는괄호배치찾기 {
             sum += Integer.parseInt(temp[i]);
         }
         return sum;
+
     }
 }
