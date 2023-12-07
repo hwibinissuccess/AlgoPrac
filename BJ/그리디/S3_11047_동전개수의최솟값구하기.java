@@ -18,7 +18,7 @@ public class S3_11047_동전개수의최솟값구하기 {
         for(int i = N-1; i>=0; i--){
             if(A[i]<=K){
                 cnt +=(K/A[i]);
-                K = K%A[i];3
+                K = K%A[i];
             }
         }
         System.out.println(cnt);
