@@ -1,4 +1,4 @@
-package BJ.정수론;
+package BJ.에라토스테네스의체;
 
 import java.util.Scanner;
 
