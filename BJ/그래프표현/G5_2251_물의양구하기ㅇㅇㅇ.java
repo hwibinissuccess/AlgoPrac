@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class G5_2251_물의양구하기 {
+public class G5_2251_물의양구하기ㅇㅇㅇ {
     //6가지 이동 케이스를 표현하기 위한 배열
     static int[] Sender = {0, 0, 1, 1, 2, 2};
     static int[] Receiver = {1, 2, 0, 2, 0, 1};
