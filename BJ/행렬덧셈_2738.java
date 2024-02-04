@@ -26,7 +26,7 @@ public class 행렬덧셈_2738 {
             }
             sb.append("\n");
         }
-        System.out.println(sb);
+        System.out.println(sb); 
 
 
 
