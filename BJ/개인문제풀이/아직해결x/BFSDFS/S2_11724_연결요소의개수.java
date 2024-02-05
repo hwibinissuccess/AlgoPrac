@@ -1,4 +1,4 @@
-package BJ.개인문제풀이.아직해결x;
+package BJ.개인문제풀이.아직해결x.BFSDFS;
 
 import java.util.Scanner;
 
