@@ -3,41 +3,46 @@ package BJ.개인문제풀이.아직해결x.BFSDFS;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class S3_2606_바이러스 {
-    static int[][] map;
     static boolean[] visit;
-    static Queue<Integer> q = new LinkedList<>();
-    static int cnt=0;
-    static int C;
+    static int[][] com;
+    static int N,line,cnt,s,e;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        C = Integer.parseInt(br.readLine());
-        int line = Integer.parseInt(br.readLine());
-        map = new int[C+1][C+1];
-        visit = new boolean[C+1];
+        N = Integer.parseInt(br.readLine());
+        line = Integer.parseInt(br.readLine());
+        com = new int[N+1][N+1];
+        cnt=0;
+        visit = new boolean[N+1];
 
         for(int i=0; i<line; i++){
             StringTokenizer st = new StringTokenizer(br.readLine());
-            int s = Integer.parseInt(st.nextToken());
-            int e = Integer.parseInt(st.nextToken());
-            map[s][e] = 1;
-            map[e][s] = 1;
-        }
-        DFS(1);
-        System.out.println(cnt);
-    }
-    private static void DFS(int start){
-        visit[start] = true;
-        cnt++;
+            s = Integer.parseInt(st.nextToken());
+            e = Integer.parseInt(st.nextToken());
 
-        for(int i=0; i<=C; i++){
-            if(map[start][i] == 1&&!visit[i]){
+            com[s][e] = com[e][s] = 1;
+
+        } // 입력받기
+
+        DFS(1);
+
+        System.out.println(cnt-1);
+
+    }
+
+    public static void DFS(int a){
+        visit[a] = true;
+        cnt++;
+        for(int i=0; i<=N; i++){
+            if(com[a][i] == 1 && !visit[i]){
+
                 DFS(i);
             }
         }
     }
+
 }
