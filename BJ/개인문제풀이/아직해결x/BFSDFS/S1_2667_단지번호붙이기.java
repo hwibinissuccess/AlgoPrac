@@ -1,67 +1,67 @@
 package BJ.개인문제풀이.아직해결x.BFSDFS;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
-
+import java.util.StringTokenizer;
 
 public class S1_2667_단지번호붙이기 {
-    static int[][] danji;
+    static int[][] map;
     static boolean[][] visit;
+    static int N, cityCnt,cnt;
+    static ArrayList homeCnt;
     static int[] dx = {0,0,-1,1};
     static int[] dy = {-1,1,0,0};
-    static List<Integer> result;
-    static int cnt, N;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
-        result = new LinkedList<>();
         N = Integer.parseInt(br.readLine());
-        danji = new int[N][N];
+        map = new int[N][N];
         visit = new boolean[N][N];
-        cnt=1;
 
         for(int i=0; i<N; i++){
-            String str = br.readLine();
+            StringTokenizer st = new StringTokenizer(br.readLine());
             for(int j=0; j<N; j++){
-                danji[i][j] = str.charAt(j)-'0';
+                map[i][j] = Integer.parseInt(st.nextToken());
             }
-        }
-
-        for(int x=0; x<N; x++){
-            for(int y=0; y<N; y++){
-                if(danji[x][y]==1 && !visit[x][y]){
-                    dfs(x,y);
-                    result.add(cnt);
-                    cnt=1;
+        } // 입력받기
+        cityCnt =0;
+        homeCnt = new ArrayList();
+        for(int i=0; i<N; i++){
+            cnt = 0;
+            for(int j=0; j<N; j++){
+                if(!visit[i][j] && map[i][j]==1){
+                    cityCnt++;
+                    DFS(i,j);
+                    homeCnt.add(cnt);
                 }
             }
         }
-
-        Collections.sort(result);
-
-        bw.write(result.size()+"\n");
-        for(int r: result) bw.write(r+"\n");
-        bw.flush();
-        bw.close();
-    }
-
-    public static void dfs(int x, int y){
-        visit[x][y]= true;
-
-        for(int i=0; i<4; i++){
-            int nx = dx[i]+x;
-            int ny = dy[i]+y;
-
-            if(nx>=0 && ny>=0 && nx<N && ny<N && !visit[nx][ny] && danji[nx][ny] ==1){
-                cnt++;
-                dfs(nx, ny);
+        Collections.sort(homeCnt);
+        System.out.println(cityCnt);
+        for(int i=0; i<homeCnt.size(); i++){
+            if(!homeCnt.get(i).equals(0)){
+                System.out.println(homeCnt);
             }
-
         }
     }
+    public static void DFS(int x, int y){
+        visit[x][y] = true;
+        cnt++;
 
+        for(int i=0; i<4; i++){
+            int nx = x+dx[i];
+            int ny = y+dy[i];
+
+            if(!range_check(nx, ny) && !visit[nx][ny] && map[nx][ny] ==1){
+                DFS(nx, ny);
+            }
+        }
+    }
+    public static boolean range_check(int x, int  y){
+        return x<0 || y<0 || x>=N || y>=N;
+    }
 }
