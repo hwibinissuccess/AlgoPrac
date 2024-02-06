@@ -3,7 +3,6 @@ package BJ.개인문제풀이.아직해결x.BFSDFS;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class G5_10026_적록색약 {
     static char[][] map;

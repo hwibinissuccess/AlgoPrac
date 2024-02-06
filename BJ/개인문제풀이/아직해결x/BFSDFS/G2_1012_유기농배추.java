@@ -8,22 +8,20 @@ import java.util.StringTokenizer;
 public class G2_1012_유기농배추 {
     static int[][] map;
     static boolean[][] visit;
-    static int T,M,N,K,X,Y;
-    static int cnt;
     static int[] dx = {0,0,-1,1};
     static int[] dy = {-1,1,0,0};
-
+    static int T, M, N, K, X, Y, cnt;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
         T = Integer.parseInt(br.readLine());
 
-        for(int t=0; t<T; t++){
-            StringTokenizer st  = new StringTokenizer(br.readLine());
+        for(int tc=0; tc<T; tc++){
+            StringTokenizer st = new StringTokenizer(br.readLine());
             M = Integer.parseInt(st.nextToken());
             N = Integer.parseInt(st.nextToken());
             K = Integer.parseInt(st.nextToken());
+            cnt=0;
             map = new int[M][N];
             visit = new boolean[M][N];
 
@@ -32,38 +30,37 @@ public class G2_1012_유기농배추 {
                 X = Integer.parseInt(st.nextToken());
                 Y = Integer.parseInt(st.nextToken());
                 map[X][Y] = 1;
-            }
-            cnt = 0;
+            } // 입력받기 완료
 
             for(int i=0; i<M; i++){
                 for(int j=0; j<N; j++){
                     if(!visit[i][j] && map[i][j] == 1){
-                        cnt++;
                         DFS(i,j);
+                        cnt++;
                     }
                 }
             }
             System.out.println(cnt);
         }
+
     }
 
-    private static void DFS(int x, int y){
+    public static void DFS(int x, int y){
         visit[x][y] = true;
 
         for(int i=0; i<4; i++){
-            int nowX = dx[i]+x;
-            int nowY = dy[i]+y;
+            int newX = x+dx[i];
+            int newY = y+dy[i];
 
-            if(range_check(nowX, nowY) && !visit[nowX][nowY] && map[nowX][nowY] == 1){
-                DFS(nowX, nowY);
+            if(!range_check(newX, newY) && !visit[newX][newY] && map[newX][newY] == 1){
+                DFS(newX, newY);
             }
 
         }
-
     }
 
-    private static boolean range_check(int nowX, int nowY){
-        return (nowX>=0 && nowY>=0 && nowX<M && nowY<N);
+    public static boolean range_check(int x, int y){
+        return x < 0 || y < 0 || x >= M || y >= N;
     }
 
 }
