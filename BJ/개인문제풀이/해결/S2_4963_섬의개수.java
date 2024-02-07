@@ -1,4 +1,4 @@
-package BJ.개인문제풀이.해결.DFSBFS;
+package BJ.개인문제풀이.해결;
 
 import java.io.BufferedReader;
 import java.io.IOException;
