@@ -11,51 +11,57 @@ public class S1_2468_안전영역 {
     static int[] dx = {0,0,-1,1};
     static int[] dy = {-1,1,0,0};
     static int N, cnt, max_height;
+    static StringTokenizer st;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
         map = new int[N][N];
-
+        visit = new boolean[N][N];
         max_height = 0;
         for(int i=0; i<N; i++){
-            StringTokenizer st = new StringTokenizer(br.readLine());
+            st = new StringTokenizer(br.readLine());
             for(int j=0; j<N; j++){
                 map[i][j] = Integer.parseInt(st.nextToken());
                 if(max_height < map[i][j]){
-                    max_height = map[i][j];
+                    max_height =  map[i][j];
                 }
             }
-        } // 입력 받기
+        } // 입력완료
 
         int max=0;
-        for(int h=0; h<max_height+1; h++){
+        for(int h=0; h<=max_height; h++){
             visit = new boolean[N][N];
-            cnt =0;
+            cnt = 0;
             for(int i=0; i<N; i++){
                 for(int j=0; j<N; j++){
-                    if(!visit[i][j] && map[i][j] >h){
-                        cnt +=  DFS(i,j,h);
+                    if(!visit[i][j] && map[i][j] > h){
+                        cnt+=DFS(i,j,h);
                     }
                 }
             }
             max = Math.max(max, cnt);
         }
-        System.out.println(max);
 
+        System.out.println(max);
     }
-    static int DFS(int x, int y, int height){
+
+    public static int DFS(int x, int y, int h){
         visit[x][y] = true;
+
         for(int i=0; i<4; i++){
             int nx = x+dx[i];
             int ny = y+dy[i];
 
-            if(nx<0||ny<0||nx>N-1||ny>N-1) continue;
-            if(visit[nx][ny]) continue;
-            if(map[nx][ny]>height){
-                DFS(nx, ny, height);
+            if(!range_check(nx, ny) && !visit[nx][ny] && map[nx][ny]>h){
+                DFS(nx, ny, h);
             }
         }
         return 1;
     }
+
+    public static boolean range_check(int x, int y){
+        return x<0 || y<0 || x>N-1 || y>N-1;
+    }
+
 }

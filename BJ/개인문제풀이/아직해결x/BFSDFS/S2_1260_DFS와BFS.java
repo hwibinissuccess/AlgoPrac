@@ -4,14 +4,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class S2_1260_DFS와BFS {
+public class S2_1260_DFS와BFS{
     static boolean[] visit;
     static int[][] map;
-    static int N, M, V;
+    static int N,M,V;
     static StringTokenizer st;
+    static List<Integer> dfs;
+    static List<Integer> bfs;
     static Queue<Integer> q;
 
     public static void main(String[] args) throws IOException {
@@ -20,49 +23,52 @@ public class S2_1260_DFS와BFS {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
         V = Integer.parseInt(st.nextToken());
-        visit = new boolean[N + 1];
-        map = new int[N + 1][N + 1];
+        map = new int[N][N];
+        visit = new boolean[N];
+        dfs = new LinkedList();
+        bfs = new LinkedList();
+        q = new LinkedList<>();
 
-
-        for (int j = 1; j <= M; j++) {
+        for(int i=0; i<M; i++){
             st = new StringTokenizer(br.readLine());
             int s = Integer.parseInt(st.nextToken());
             int e = Integer.parseInt(st.nextToken());
 
             map[s][e] = map[e][s] = 1;
-        } // 입력 완료
+        } // 입력완료
 
-        DFS(V);
-
-        BFS(V);
-
+        // DFS
+        DFS(1);
+        System.out.println();
+        visit = new boolean[N];
+        // BFS
+        BFS(1);
     }
 
-    public static void DFS(int v) {
-        visit[v] = true;
-        System.out.println(v + " ");
-        for (int i = 1; i < N + 1; i++) {
-            if (!visit[i] && map[v][i] == 1) {
+    public static void DFS(int x){
+        visit[x] = true;
+        System.out.print(x);
+
+        for(int i=0; i<=N; i++){
+            if(map[x][i] == 1 && !visit[i])
                 DFS(i);
-            }
         }
-
     }
 
-    public static void BFS(int v) {
-        q = new LinkedList<>();
-        q.add(v);
-        System.out.println(v + " ");
-        while (!q.isEmpty()) {
+    public static void BFS(int x){
+        q.add(x);
+        visit[x] = true;
+
+        while(!q.isEmpty()){
             int now = q.poll();
-            for (int i = 1; i < N + 1; i++) {
-                if (!visit[i] && map[now][i] == 1) {
+            System.out.print(now);
+            for(int i=1; i<=N; i++){
+                if(map[now][i] == 1 && !visit[i]){
                     q.add(i);
                     visit[i] = true;
                 }
             }
         }
-
     }
 
 }

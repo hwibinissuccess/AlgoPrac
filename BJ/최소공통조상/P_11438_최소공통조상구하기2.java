@@ -35,6 +35,6 @@ public class P_11438_최소공통조상구하기2 {
             temp<<= 1;
             kmax++;
         }
-        parent = new int[kmax+1]
+        parent = new int[kmax+1];
     }
 }
