@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class G5_7576_토마토 {
+public class G5_7576_토마토_BFS {
     static int[][] map;
     static int[] dx = {0, 0, -1, 1};
     static int[] dy = {-1, 1, 0, 0};
