@@ -8,64 +8,61 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class S2_1260_DFS와BFS {
-    static StringBuilder sb = new StringBuilder();
-    static boolean[] check;
-    static int[][] arr;
-    static int node, line, start;
-    static Queue<Integer> q = new LinkedList<>();
+    static boolean[] visit;
+    static int[][] map;
+    static int N, M, V;
+    static StringTokenizer st;
+    static Queue<Integer> q;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        node = Integer.parseInt(st.nextToken());
-        line = Integer.parseInt(st.nextToken());
-        start = Integer.parseInt(st.nextToken());
+        st = new StringTokenizer(br.readLine());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        V = Integer.parseInt(st.nextToken());
+        visit = new boolean[N + 1];
+        map = new int[N + 1][N + 1];
 
-        arr = new int[node+1][node+1];
-        check = new boolean[node+1];
 
-        for(int i=0; i<line; i++){
-            StringTokenizer str = new StringTokenizer(br.readLine());
+        for (int j = 1; j <= M; j++) {
+            st = new StringTokenizer(br.readLine());
+            int s = Integer.parseInt(st.nextToken());
+            int e = Integer.parseInt(st.nextToken());
 
-            int a = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
+            map[s][e] = map[e][s] = 1;
+        } // 입력 완료
 
-            arr[a][b] = arr[b][a] = 1;
-        }
-        dfs(start);
-        sb.append("\n");
-        check = new boolean[node+1];
-        bfs(start);
-        System.out.println(sb);
+        DFS(V);
+
+        BFS(V);
+
     }
 
-    public static void dfs(int start){
-        check[start] = true;
-        sb.append(start+" ");
-
-        for(int i=0; i<=node; i++){
-            if(arr[start][i] == 1&&!check[i]){
-                dfs(i);
+    public static void DFS(int v) {
+        visit[v] = true;
+        System.out.println(v + " ");
+        for (int i = 1; i < N + 1; i++) {
+            if (!visit[i] && map[v][i] == 1) {
+                DFS(i);
             }
         }
+
     }
 
-    public static void bfs(int start){
-        q.add(start);
-        check[start] = true;
-
-        while(!q.isEmpty()){
-            start = q.poll();
-            sb.append(start+" ");
-
-            for(int i=1; i<=node; i++){
-                if(arr[start][i] == 1&!check[i]){
+    public static void BFS(int v) {
+        q = new LinkedList<>();
+        q.add(v);
+        System.out.println(v + " ");
+        while (!q.isEmpty()) {
+            int now = q.poll();
+            for (int i = 1; i < N + 1; i++) {
+                if (!visit[i] && map[now][i] == 1) {
                     q.add(i);
-                    check[i] = true;
+                    visit[i] = true;
                 }
             }
-
         }
+
     }
 
 }
