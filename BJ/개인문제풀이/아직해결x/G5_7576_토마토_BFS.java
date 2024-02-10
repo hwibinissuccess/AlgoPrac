@@ -9,11 +9,23 @@ import java.util.StringTokenizer;
 
 public class G5_7576_토마토_BFS {
     static int[][] map;
-    static int[] dx = {0, 0, -1, 1};
-    static int[] dy = {-1, 1, 0, 0};
-    static int N, M;
+    static int M,N;
+    static int[] dx = {0,0,-1,1};
+    static int[] dy = {-1,1,0,0};
+    static Queue<tomato> q = new LinkedList<tomato>();
     static StringTokenizer st;
-    static Queue<int[]> q = new LinkedList<>();
+
+    public static class tomato{
+        int x;
+        int y;
+        int day;
+
+        public tomato(int x, int y, int day){
+            this.x = x;
+            this.y = y;
+            this.day = day;
+        }
+    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -21,57 +33,53 @@ public class G5_7576_토마토_BFS {
         M = Integer.parseInt(st.nextToken());
         N = Integer.parseInt(st.nextToken());
         map = new int[N][M];
-        for (int i = 0; i < N; i++) {
-            st = new StringTokenizer(br.readLine());
-            for (int j = 0; j < M; j++) {
+
+        for(int i=0; i<N; i++){
+            st = new StringTokenizer(br.readLine()," ");
+            for(int j=0; j<M; j++){
                 map[i][j] = Integer.parseInt(st.nextToken());
-                if (map[i][j] == 1) {
-                    q.add(new int[]{i, j});
+                if(map[i][j] == 1){
+                    q.offer(new tomato(i,j,0));
                 }
             }
         }
-        System.out.println(BFS());
+        BFS();
     }
+    public static void BFS(){
+        int day= 0;
 
-    public static int BFS() {
-        while (!q.isEmpty()) {
-            int[] t = q.poll();
-            int x = t[0];
-            int y = t[1];
-            for (int i = 0; i < 4; i++) {
-                int nx = x + dx[i];
-                int ny = y + dy[i];
+        while(!q.isEmpty()){
+            tomato t = q.poll();
+            day = t.day;
 
-                if (nx < 0 || ny < 0 || nx >= N || ny >= M) continue;
-                if (map[nx][ny] == 0) {
-                    map[nx][ny] = map[x][y] + 1;
-                    q.add(new int[]{nx, ny});
-                }
-            }
-        }
-        int max = Integer.MIN_VALUE;
-        if (checkZero()) {
-            return -1;
-        } else {
-            for (int i = 0; i < N; i++) {
-                for (int j = 0; j < M; j++) {
-                    if (max < map[i][j]) {
-                        max = map[i][j];
+            for(int i=0; i<4; i++){
+                int nx = t.x+dx[i];
+                int ny = t.y+dy[i];
+
+                if(0<=nx && nx<N && 0<=ny && ny<M){
+                    if(map[nx][ny] == 0){
+                        map[nx][ny] = 1;
+                        q.add(new tomato(nx,ny,day+1));
                     }
                 }
             }
-            return max - 1;
+        }
+        if(checkTomato()){
+            System.out.println(day);
+        } else {
+            System.out.println(-1);
         }
     }
 
-    private static boolean checkZero() {
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                if (map[i][j] == 0) {
-                    return true;
+    static boolean checkTomato(){
+        for(int i=0; i<N; i++){
+            for(int j=0; j<M; j++){
+                if(map[i][j] == 0){
+                    return false;
                 }
             }
+            return true;
         }
-        return false;
     }
+
 }
