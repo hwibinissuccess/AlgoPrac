@@ -3,7 +3,6 @@ package BJ.개인문제풀이.삼성SW역량테스트기출문제;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class Main_5373 {
 
