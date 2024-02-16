@@ -2,7 +2,7 @@ package BJ.개인문제풀이.알고리즘kit;
 
 import java.util.Stack;
 
-public class 주시가격 {
+public class 주식가격 {
 
     public int[] solution(int[] prices) {
 
@@ -18,7 +18,7 @@ public class 주시가격 {
         }
         while(!st.isEmpty()){
             ans[st.peek()] = prices.length - st.peek()-1;
-            st.pop;
+            st.pop()게;
         }
         return ans;
     }
