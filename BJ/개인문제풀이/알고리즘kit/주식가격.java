@@ -18,7 +18,7 @@ public class 주식가격 {
         }
         while(!st.isEmpty()){
             ans[st.peek()] = prices.length - st.peek()-1;
-            st.pop()게;
+            st.pop();
         }
         return ans;
     }
