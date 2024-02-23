@@ -1,4 +1,4 @@
-package BJ.개인문제풀이.알고리즘kit.해결;
+package BJ.개인문제풀이.알고리즘kit;
 
 import java.util.Arrays;
 
