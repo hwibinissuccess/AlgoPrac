@@ -2,7 +2,7 @@ package BJ.개인문제풀이.알고리즘kit;
 
 import java.util.Stack;
 
-public class 같은숫자는싫어 {
+public class 같은숫자는싫어_S {
 
     public int[] solution(int []arr) {
 
