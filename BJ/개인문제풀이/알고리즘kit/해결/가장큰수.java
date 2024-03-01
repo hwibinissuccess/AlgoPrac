@@ -12,18 +12,17 @@ public class 가장큰수 {
             temp[i] = String.valueOf(numbers[i]);
         }
 
-        Arrays.sort(temp, (o1, o2) -> (o2+o1).compareTo(o1+o2));
+        Arrays.sort(temp, (o1,o2) -> (o2+o1).compareTo(o1+o2));
+
+        StringBuilder sb = new StringBuilder();
 
         if(temp[0].equals("0")){
             return "0";
         }
 
-        StringBuilder sb = new StringBuilder();
-
         for(int i=0; i<temp.length; i++){
             sb.append(temp[i]);
         }
-
 
         return sb.toString();
 
