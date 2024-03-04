@@ -2,7 +2,7 @@ package BJ.개인문제풀이.알고리즘kit;
 
 import java.util.Arrays;
 
-public class 구명보트 {
+public class 구명보트_S {
 
     public int solution(int[] people, int limit) {
 

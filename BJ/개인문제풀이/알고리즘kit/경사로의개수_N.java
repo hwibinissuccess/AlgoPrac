@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.알고리즘kit;
 
-public class 경사로의개수 {
+public class 경사로의개수_N {
 
 
     static int MOD = 1000000007;
