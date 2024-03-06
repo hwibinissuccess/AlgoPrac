@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.알고리즘kit;
 
-public class 네트워크 {
+public class 네트워크_S {
 
     public int solution(int n, int[][] computers) {
 
