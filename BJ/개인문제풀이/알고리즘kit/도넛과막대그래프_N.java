@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class 도넛과막대그래프 {
+public class 도넛과막대그래프_N {
 
     private static List<List<Integer>> graph;
 
