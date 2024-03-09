@@ -2,7 +2,7 @@ package BJ.개인문제풀이.알고리즘kit;
 
 import java.util.Arrays;
 
-public class 단속카메라 {
+public class 단속카메라_S {
 
     class Solution {
         public int solution(int[][] routes) {

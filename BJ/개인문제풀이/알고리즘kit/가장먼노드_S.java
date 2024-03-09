@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class 가장먼노드 {
+public class 가장먼노드_S {
 
     static ArrayList<Integer>[] adj;
     static int[] visit;
