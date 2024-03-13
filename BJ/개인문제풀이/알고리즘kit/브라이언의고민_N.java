@@ -3,7 +3,7 @@ package BJ.개인문제풀이.알고리즘kit;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
-public class 브라이언의고민 {
+public class 브라이언의고민_N {
 
     public String solution(String sentence) {
         StringBuilder answerList = new StringBuilder();

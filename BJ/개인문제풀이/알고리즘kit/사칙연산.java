@@ -86,5 +86,4 @@ public class 사칙연산 {
         // flag = 1일 때는 초기값이 Integer.MAX_VALUE;
         return dp[flag][start][end] != Integer.MIN_VALUE && dp[flag][start][end] != Integer.MAX_VALUE;
     }
-
 }

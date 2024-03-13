@@ -1,4 +1,4 @@
-package BJ.개인문제풀이.알고리즘kit;
+package BJ.개인문제풀이.알고리즘kit.해결;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -9,6 +9,7 @@ public class 기능개발 {
     public ArrayList solution(int[] progresses, int[] speeds) {
 
         ArrayList<Integer> ans = new ArrayList<>();
+
         Queue<Integer> q = new LinkedList<>();
 
         for(int i=0; i<progresses.length; i++){
@@ -16,15 +17,18 @@ public class 기능개발 {
         }
 
         while(!q.isEmpty()){
-            int min = q.poll();
-            int cnt=1;
+            int n = q.poll();
+            int cnt = 1;
 
-            while(!q.isEmpty() && q.peek() <= min){
+            while(!q.isEmpty() && n >=q.peek()){
                 q.poll();
-                cnt++;
+                cnt += 1;
             }
+
             ans.add(cnt);
+
         }
+
         return ans;
 
     }

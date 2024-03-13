@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.알고리즘kit;
 
-public class 등굣길 {
+public class 등굣길_N {
 
     public int solution(int m, int n, int[][] puddles) {
 
