@@ -2,7 +2,7 @@ package BJ.개인문제풀이.알고리즘kit;
 
 import java.util.PriorityQueue;
 
-public class 더맵게 {
+public class 더맵게_S {
 
     public int solution(int[] scoville, int K) {
 
