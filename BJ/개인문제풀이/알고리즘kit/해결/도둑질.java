@@ -1,4 +1,4 @@
-package BJ.개인문제풀이.알고리즘kit;
+package BJ.개인문제풀이.알고리즘kit.해결;
 
 public class 도둑질 {
 
@@ -7,9 +7,11 @@ public class 도둑질 {
         int ans = 0;
 
         if(money.length == 3){
-            for(int i=0; i<3; i++) if(ans < money[i]) ans = money[i];
-
-
+            for(int i=0; i<3; i++){
+                if(ans < money[i]){
+                    ans = money[i];
+                }
+            }
             return ans;
         }
 
@@ -27,13 +29,16 @@ public class 도둑질 {
             ans = Math.max(ans, dp2[i]);
 
             if(i == money.length-1) break;
+
             dp1[i] = Math.max(dp1[i-1], dp1[i-2]+money[i]);
             ans = Math.max(ans, dp1[i]);
 
-
-
         }
         return ans;
+
+
+
     }
+
 
 }
