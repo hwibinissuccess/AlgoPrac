@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.알고리즘kit;
 
-public class 사칙연산 {
+public class 사칙연산_N {
 
 
     private int numbers[];
