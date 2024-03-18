@@ -3,7 +3,7 @@ package BJ.개인문제풀이.알고리즘kit;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 모의고사 {
+public class 모의고사_S {
 
     public List<Integer> solution(int[] answers) {
 
