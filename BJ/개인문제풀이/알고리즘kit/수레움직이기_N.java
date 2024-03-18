@@ -3,7 +3,7 @@ package BJ.개인문제풀이.알고리즘kit;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class 수레움직이기 {
+public class 수레움직이기_N {
 
 
     public static void main(String[] args) {
