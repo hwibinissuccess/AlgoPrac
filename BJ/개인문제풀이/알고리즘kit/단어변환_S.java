@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.알고리즘kit;
 
-public class 단어변환 {
+public class 단어변환_S {
 
 
     static boolean[] visit;
