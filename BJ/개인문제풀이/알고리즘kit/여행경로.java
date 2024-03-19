@@ -5,8 +5,8 @@ import java.util.Collections;
 
 public class 여행경로 {
 
-    boolean[] visit;
-    ArrayList<String> allRoute;
+    static boolean[] visit;
+    static ArrayList<String> allRoute;
 
     public String[] solution(String[][] tickets) {
 
@@ -23,7 +23,7 @@ public class 여행경로 {
 
     }
 
-    public void DFS(String start, String route, String[][] tickets, int cnt){
+    public static void DFS(String start, String route, String[][] tickets, int cnt){
         if(cnt == tickets.length){
             allRoute.add(route);
             return;
@@ -36,7 +36,6 @@ public class 여행경로 {
                 visit[i] = false;
             }
         }
-
     }
 
 }

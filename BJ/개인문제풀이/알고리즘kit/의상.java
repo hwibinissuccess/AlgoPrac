@@ -3,7 +3,7 @@ package BJ.개인문제풀이.알고리즘kit;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class 위장 {
+public class 의상 {
     public int solution(String[][] clothes) {
         HashMap<String, Integer> map = new HashMap<>();
         for (String[] clothe : clothes) {
