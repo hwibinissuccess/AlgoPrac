@@ -3,7 +3,7 @@ package BJ.개인문제풀이.알고리즘kit;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 모음사전 {
+public class 모음사전_S {
 
     static char[] words = {'A','E','I','O','U'};
     static int max = 5;
