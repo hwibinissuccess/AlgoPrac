@@ -16,7 +16,7 @@ public class 입국심사 {
             long com = 0;
 
             for(int i=0; i<times.length; i++){
-                com += mid/times[i];
+                ㅇ
             }
             if(com < n)
                 left = mid+1;
