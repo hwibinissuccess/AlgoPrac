@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class 야근지수_1 {
+public class 야근지수_2 {
 
     public long solution(int n, int[] works) {
 
