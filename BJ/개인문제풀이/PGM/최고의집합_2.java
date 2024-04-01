@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 최고의집합_1 {
+public class 최고의집합_2 {
 
     public int[] solution(int n, int s) {
 

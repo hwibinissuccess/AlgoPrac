@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 숫자의표현_1 {
+public class 숫자의표현_2 {
 
     public int solution(int n) {
 
