@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.Arrays;
 
-public class 최솟값만들기_S {
+public class 최솟값만들기_SSS {
 
     public int solution(int []A, int []B)
     {

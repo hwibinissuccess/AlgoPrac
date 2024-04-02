@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class 숫자게임_S {
+public class 숫자게임_SSS {
 
     public int solution(int[] A, int[] B) {
 
