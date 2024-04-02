@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 이진변환반복하기_2 {
+public class 이진변환반복하기_2_SSS {
 
     public int[] solution(String s) {
 
