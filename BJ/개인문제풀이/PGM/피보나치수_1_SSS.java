@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 피보나치수 {
+public class 피보나치수_1_SSS {
 
     public int solution(int n) {
 
