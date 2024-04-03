@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 다음큰숫자_2 {
+public class 다음큰숫자_2_SSS {
 
     public int solution(int n) {
 
