@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.Stack;
 
-public class 짝지어제거하기 {
+public class 짝지어제거하기_1 {
 
     public int solution(String s){
 
