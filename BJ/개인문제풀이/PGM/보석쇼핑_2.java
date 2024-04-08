@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class 보석쇼핑_1 {
+public class 보석쇼핑_2 {
 
     public int[] solution(String[] gems) {
 
