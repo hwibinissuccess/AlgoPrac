@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 영어끝말잇기_2 {
+public class 영어끝말잇기_3 {
 
     public int[] solution(int n, String[] words) {
 
