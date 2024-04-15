@@ -2,10 +2,10 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.*;
 
-public class 경주로건설 {
+public class 경주로건설_4 {
 
     int N;
-    int [][][] visited;
+    int[][][] visited;
     int[][] d = {{1,0},{-1,0},{0,1},{0,-1}};
 
     public int solution(int[][] board) {

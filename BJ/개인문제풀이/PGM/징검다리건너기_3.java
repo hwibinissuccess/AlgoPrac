@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 징검다리건너기_2 {
+public class 징검다리건너기_3 {
 
     public int solution(int[] stones, int k) {
 
