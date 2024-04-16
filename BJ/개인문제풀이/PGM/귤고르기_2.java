@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
-public class 귤고르기_1 {
+public class 귤고르기_2 {
 
     public int solution(int k, int[] tangerine) {
 
