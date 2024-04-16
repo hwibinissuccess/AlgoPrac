@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 예상대진표_2 {
+public class 예상대진표_2_SSS {
 
     public int solution(int n, int a, int b){
 
