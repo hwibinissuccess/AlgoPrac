@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 가장긴팰린드롬_2 {
+public class 가장긴팰린드롬_3 {
 
     public int solution(String s){
 
