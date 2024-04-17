@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 멀리뛰기_1 {
+public class 멀리뛰기_1_SSS {
 
     public long solution(int n) {
 
