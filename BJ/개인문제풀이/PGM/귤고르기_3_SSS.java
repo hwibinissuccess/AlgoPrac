@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
-public class 귤고르기_3 {
+public class 귤고르기_3_SSS {
 
     public int solution(int k, int[] tangerine) {
 
