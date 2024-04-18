@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class 불량사용자_8 {
+public class 불량사용자_9 {
 
     static boolean[] check;
     static HashSet<String> set;

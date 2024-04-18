@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.HashSet;
 import java.util.Set;
 
-public class 연속부분수열의의개수_1 {
+public class 연속부분수열의의개수_2 {
 
     public int solution(int[] elements) {
 
