@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.ArrayList;
 import java.util.List;
 
-public class n2배열자르기_1 {
+public class n2배열자르기_1_SSS {
 
     public List<Long> solution(int n, long left, long right) {
 
