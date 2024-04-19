@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 풍선터트리기_1 {
+public class 풍선터트리기_2 {
 
     public int solution(int[] a) {
 

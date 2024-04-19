@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.PriorityQueue;
 
-public class 카카오1차셔틀버스_1 {
+public class 카카오1차셔틀버스_2 {
 
     public String solution(int n, int t, int m, String[] timetable) {
 
