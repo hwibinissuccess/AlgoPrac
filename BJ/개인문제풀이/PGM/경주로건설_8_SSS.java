@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.*;
 
-public class 경주로건설_8 {
+public class 경주로건설_8_SSS {
 
     int N;
     int[][][] visited;
