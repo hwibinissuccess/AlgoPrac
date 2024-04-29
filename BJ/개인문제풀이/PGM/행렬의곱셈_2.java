@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 행렬의곱셈_1 {
+public class 행렬의곱셈_2 {
 
     public int[][] solution(int[][] arr1, int[][] arr2) {
 

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class 합승택시요금_1 {
+public class 합승택시요금_2 {
 
     int N;
     int E;

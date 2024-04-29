@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.HashMap;
 import java.util.Map;
 
-public class 할인행사_2 {
+public class 할인행사_3 {
 
     public int solution(String[] want, int[] number, String[] discount) {
 
