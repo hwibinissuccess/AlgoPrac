@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class 튜플_1 {
+public class 튜플_2 {
 
     public ArrayList<Integer> solution(String s) {
 

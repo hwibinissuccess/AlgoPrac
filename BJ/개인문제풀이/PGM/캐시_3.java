@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.ArrayList;
 
-public class 캐시_2 {
+public class 캐시_3 {
 
     public int solution(int cacheSize, String[] cities) {
 
