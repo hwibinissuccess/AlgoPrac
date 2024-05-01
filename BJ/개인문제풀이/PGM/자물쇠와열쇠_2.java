@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 자물쇠와열쇠_1 {
+public class 자물쇠와열쇠_2 {
 
     public boolean solution(int[][] key, int[][] lock) {
 
