@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 행렬의곱셈_3 {
+public class 행렬의곱셈_3_SSS {
 
     public int[][] solution(int[][] arr1, int[][] arr2) {
 
