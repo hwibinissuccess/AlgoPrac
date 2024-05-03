@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.Arrays;
 
-public class 거스름돈_4 {
+public class 거스름돈_4_SSS {
 
     public int solution(int n, int[] money) {
 
