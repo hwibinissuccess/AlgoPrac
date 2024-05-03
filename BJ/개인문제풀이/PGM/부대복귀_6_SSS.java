@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.*;
 
-public class 부대복귀_6 {
+public class 부대복귀_6_SSS {
 
     static List<List<Integer>> graph;
     static int[] dis;
