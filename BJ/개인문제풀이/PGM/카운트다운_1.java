@@ -35,14 +35,14 @@ public class 카운트다운_1 {
                         dp[i][0] = dp[i-j][0]+1;
                         dp[i][1] = dp[i-j][1]+1;
                     } else if(dp[i][0] == dp[i-j][0]+1){
-                        dp[i][1] = Math.max(dp[i][1], dp[i-j][1]);
+                        dp[i][1] = Math.max(dp[i][1], dp[i-j][1]+1);
                     }
                 }
 
                 if(i-2*j>=0){
                     if(dp[i][0] > dp[i-2*j][0]+1){
                         dp[i][0] = dp[i-2*j][0]+1;
-                        dp[i][1] = dp[i-2*j][1]+1;
+                        dp[i][1] = dp[i-2*j][1];
                     }
                 }
 
