@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.HashMap;
 import java.util.Map;
 
-public class 롤케이크자르기_2 {
+public class 롤케이크자르기_2_SSS {
 
     public int solution(int[] topping) {
 
