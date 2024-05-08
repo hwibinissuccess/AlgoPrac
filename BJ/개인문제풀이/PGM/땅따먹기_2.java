@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 땅따먹기_1 {
+public class 땅따먹기_2 {
 
     int solution(int[][] land) {
 

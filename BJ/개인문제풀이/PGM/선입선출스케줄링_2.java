@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 선입선출스케줄링 {
+public class 선입선출스케줄링_2 {
 
     public int solution(int n, int[] cores) {
 
