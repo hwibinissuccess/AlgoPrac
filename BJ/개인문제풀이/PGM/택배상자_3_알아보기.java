@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.Stack;
 
-public class 택배상자_3 {
+public class 택배상자_3_알아보기 {
 
     public int solution(int[] order) {
 

@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 파괴되지않은건물_1 {
+public class 파괴되지않은건물_1_알아보기 {
 
     static int[][] sum;
     static int N, M;
