@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 자연수뒤집어배열로만들기_1 {
+public class 자연수뒤집어배열로만들기_2 {
 
     public int[] solution(long n) {
 

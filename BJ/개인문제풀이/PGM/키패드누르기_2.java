@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 키패드누르기_1 {
+public class 키패드누르기_2 {
 
     public String solution(int[] numbers, String hand) {
 
