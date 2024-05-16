@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 서울에서김서방찾기_1 {
+public class 서울에서김서방찾기_1_SSS {
 
     public String solution(String[] seoul) {
 
