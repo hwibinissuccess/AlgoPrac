@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 약수의합_1 {
+public class 약수의합_1_SSS {
 
     public int solution(int n) {
 
