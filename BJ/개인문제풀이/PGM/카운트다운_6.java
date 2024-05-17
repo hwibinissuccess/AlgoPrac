@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 카운트다운_5 {
+public class 카운트다운_6 {
     int[][] dp;
 
     public int[] solution(int target) {
