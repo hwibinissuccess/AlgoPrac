@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class 뉴스클러스터링_3 {
+public class 뉴스클러스터링_4 {
 
     public int solution(String str1, String str2) {
 
