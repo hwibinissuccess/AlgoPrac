@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.Arrays;
 
-public class 정수내림차순으로배치하기_3 {
+public class 정수내림차순으로배치하기_3_SSS {
 
     public long solution(long n) {
 
