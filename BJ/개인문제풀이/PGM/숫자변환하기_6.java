@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 숫자변환하기_5 {
+public class 숫자변환하기_6 {
 
     public int solution(int x, int y, int n) {
 
