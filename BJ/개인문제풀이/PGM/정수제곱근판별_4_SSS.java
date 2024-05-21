@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 정수제곱근판별_4 {
+public class 정수제곱근판별_4_SSS {
 
     public long solution(long n) {
 
