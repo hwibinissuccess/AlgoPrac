@@ -5,63 +5,30 @@ import java.util.ArrayList;
 public class 연속된부분수열의합_1 {
 
     public int[] solution(int[] sequence, int k) {
+        int n = sequence.length;
+        int left = 0, right = 0;
+        int sum = 0;
+        int minLength = Integer.MAX_VALUE;
+        int[] ans = new int[]{-1, -1};
 
-        ArrayList<int[]> list = new ArrayList<>();
-        int idx = 0;
-        int len = sequence.length;
-        int[] ans = new int[]{-1,-1};
+        while (right < n) {
+            sum += sequence[right];
 
-        while(true){
+            while (sum > k && left <= right) {
+                sum -= sequence[left];
+                left++;
+            }
 
-            if(idx>=len) break;
-            int sum = 0;
-
-            for(int i=idx; i<len; i++){
-                sum += sequence[i];
-                if(sum >k) break;
-                if(sum == k){
-                    list.add(new int[]{idx, i});
-                    //return new int[]{idx, i};
-                    break;
+            if (sum == k) {
+                int currentLength = right - left + 1;
+                if (currentLength < minLength) {
+                    minLength = currentLength;
+                    ans[0] = left;
+                    ans[1] = right;
                 }
             }
 
-            idx++;
-        }
-
-        if(list.size() == 1){
-            int[] temp = list.get(0);
-            ans[0] = temp[0];
-            ans[1] = temp[1];
-        }
-
-        if (list.size() > 0) {
-            ans[0] = list.get(0)[0];
-            ans[1] = list.get(0)[1];
-        }
-
-        for(int i=1; i<list.size(); i++){
-
-            int[] temp = list.get(i);
-            int[] temp2 = ans;
-
-            int currentLength = temp[1]-temp[0];
-            int preLength = ans[1]-ans[0];
-
-            if(preLength < currentLength) continue;
-            if(currentLength < preLength){
-                ans[0] = temp[0];
-                ans[1] = temp[1];
-            }
-            if(currentLength == preLength){
-                if(ans[0] < temp[0]) continue;
-                else if(temp[0] < ans[0]){
-                    ans[0] = temp[0];
-                    ans[1] = temp[1];
-                }
-            }
-
-
+            right++;
         }
 
         return ans;

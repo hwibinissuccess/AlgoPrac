@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 방문길이_2 {
+public class 방문길이_3 {
 
     static int dr[] = {-1,0,1,0};
     static int dc[] = {0,-1,0,1};
