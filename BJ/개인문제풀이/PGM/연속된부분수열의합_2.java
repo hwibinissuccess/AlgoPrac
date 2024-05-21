@@ -1,8 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-import java.util.ArrayList;
-
-public class 연속된부분수열의합_1 {
+public class 연속된부분수열의합_2 {
 
     public int[] solution(int[] sequence, int k) {
         int n = sequence.length;
