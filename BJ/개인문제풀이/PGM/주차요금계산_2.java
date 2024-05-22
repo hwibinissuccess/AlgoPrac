@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class 주차요금계산_1 {
+public class 주차요금계산_2 {
 
     public int[] solution(int[] fees, String[] records) {
         int[] answer = {};

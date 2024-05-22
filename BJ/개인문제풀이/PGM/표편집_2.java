@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.Stack;
 
-public class 표편집_1 {
+public class 표편집_2 {
 
 
     public String solution(int n, int k, String[] cmd) {

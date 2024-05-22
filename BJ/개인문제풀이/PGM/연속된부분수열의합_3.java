@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 연속된부분수열의합_2 {
+public class 연속된부분수열의합_3 {
 
     public int[] solution(int[] sequence, int k) {
         int n = sequence.length;
