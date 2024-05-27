@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class 압축_6 {
+public class 압축_7 {
 
     public ArrayList<Integer> solution(String msg) {
 

@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 스킬트리_2 {
+public class 스킬트리_3 {
 
     public int solution(String skill, String[] skill_trees) {
 
