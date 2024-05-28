@@ -1,23 +1,22 @@
 package BJ.개인문제풀이.PGM;
 
-public class 양과늑대_1 {
+public class 양과늑대_2 {
 
+    static int maxSheepCnt = 0;
     static int[] gInfo;
     static int[][] gEdges;
-    static int maxSheepCnt = 0;
 
     public int solution(int[] info, int[][] edges) {
 
+        boolean[] visit = new boolean[info.length];
         gInfo = info;
         gEdges = edges;
-        boolean[] visit = new boolean[info.length];
-        dfs(0,visit,0,0);
+        DFS(0, visit, 0, 0);
 
         return maxSheepCnt;
-
     }
 
-    public static void dfs(int idx, boolean[] visit, int sheepCnt, int wolfCnt){
+    public static void DFS(int idx, boolean[] visit, int sheepCnt, int wolfCnt){
 
         visit[idx] = true;
 
@@ -31,19 +30,16 @@ public class 양과늑대_1 {
         }
 
         if(sheepCnt <= wolfCnt){
+            visit[idx] = false; // 상태 되돌리기
             return;
         }
 
         for(int[] edge : gEdges){
             if(visit[edge[0]] && !visit[edge[1]]){
-                boolean[] nextVisit = new boolean[visit.length];
-
-                for(int i=0; i<visit.length; i++){
-                    nextVisit[i] = visit[i];
-                }
-
-                dfs(edge[1], nextVisit, sheepCnt, wolfCnt);
+                DFS(edge[1], visit, sheepCnt, wolfCnt);
             }
         }
+
+        visit[idx] = false; // 상태 되돌리기
     }
 }
