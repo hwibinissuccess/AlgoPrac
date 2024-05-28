@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 콜라츠추측_2 {
+public class 콜라츠추측_2_SSS {
 
     public long solution(long num) {
 
