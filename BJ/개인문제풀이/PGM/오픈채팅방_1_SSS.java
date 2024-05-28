@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.HashMap;
 import java.util.Map;
 
-public class 오픈채팅방_1 {
+public class 오픈채팅방_1_SSS {
 
     public String[] solution(String[] record) {
 
