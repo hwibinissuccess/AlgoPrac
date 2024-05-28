@@ -7,7 +7,7 @@ public class 길찾기게임_4 {
 
     int[][] result;
     int idx;
-d
+
     public int[][] solution(int[][] nodeinfo) {
 
         Node[] node = new Node[nodeinfo.length];
