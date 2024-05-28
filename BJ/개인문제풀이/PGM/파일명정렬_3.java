@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.Arrays;
 import java.util.Locale;
 
-public class 파일명정렬_2 {
+public class 파일명정렬_3 {
 
     public String[] solution(String[] files) {
 
