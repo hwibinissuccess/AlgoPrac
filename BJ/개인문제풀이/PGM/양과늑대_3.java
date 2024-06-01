@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 양과늑대_2 {
+public class 양과늑대_3 {
 
     static int maxSheepCnt = 0;
     static int[] gInfo;
