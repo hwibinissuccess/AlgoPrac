@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 프렌즈4블록_2 {
+public class 프렌즈4블록_3 {
 
     public int solution(int m, int n, String[] board) {
 

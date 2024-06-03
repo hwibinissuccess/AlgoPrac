@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 쿼드압축후개수세기_1 {
+public class 쿼드압축후개수세기_2 {
 
     static int[] ans;
 
