@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 약수의개수와덧셈_1 {
+public class 약수의개수와덧셈_2 {
 
     public int solution(int left, int right) {
 
