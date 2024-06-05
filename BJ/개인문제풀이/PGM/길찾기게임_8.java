@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class 길찾기게임_7 {
+public class 길찾기게임_8 {
 
     int[][] result;
     int idx;

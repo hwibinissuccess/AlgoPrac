@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class 문자열내림차순으로배치하기_1 {
+public class 문자열내림차순으로배치하기_1_SSS {
 
     public String solution(String s) {
 
