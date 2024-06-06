@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 기둥과보설치_4 {
+public class 기둥과보설치_5 {
 
     boolean[][] pillar;
     boolean[][] bar;
