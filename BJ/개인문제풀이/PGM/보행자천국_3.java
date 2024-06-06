@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 보행자천국_2 {
+public class 보행자천국_3 {
 
     int MOD = 20170805;
     public int solution(int m, int n, int[][] cityMap) {

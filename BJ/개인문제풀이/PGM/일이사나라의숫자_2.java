@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 일이사나라의숫자_1 {
+public class 일이사나라의숫자_2 {
     public String solution(int n) {
 
         String ans = "";
