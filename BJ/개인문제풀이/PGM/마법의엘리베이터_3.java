@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 마법의엘리베이터_2 {
+public class 마법의엘리베이터_3 {
 
     public int solution(int storey) {
         int answer = 0;
