@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 삼각달팽이_3 {
+public class 삼각달팽이_4 {
 
     public int[] solution(int n) {
 
