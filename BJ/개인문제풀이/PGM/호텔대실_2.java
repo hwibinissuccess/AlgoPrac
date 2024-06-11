@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class 호텔대실_1 {
+public class 호텔대실_2 {
 
     public int solution(String[][] book_time) {
 

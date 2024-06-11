@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 최대공약수와최소공배수_1 {
+public class 최대공약수와최소공배수_2 {
 
     public int[] solution(int n, int m) {
 
