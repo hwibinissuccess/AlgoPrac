@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 크기가작은부분문자열_2 {
+public class 크기가작은부분문자열_3 {
 
     public int solution(String t, String p) {
 
