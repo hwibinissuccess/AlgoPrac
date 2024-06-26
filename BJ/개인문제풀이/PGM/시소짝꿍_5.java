@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class 시소짝꿍_4 {
+public class 시소짝꿍_5 {
 
     public long solution(int[] weights) {
 

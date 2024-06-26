@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.HashMap;
 import java.util.Map;
 
-public class 완주하지못한선수_1 {
+public class 완주하지못한선수_2 {
 
     public String solution(String[] participant, String[] completion) {
 
