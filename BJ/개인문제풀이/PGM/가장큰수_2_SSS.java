@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.Arrays;
 
-public class 가장큰수_2 {
+public class 가장큰수_2_SSS {
 
     public String solution(int[] numbers) {
 
