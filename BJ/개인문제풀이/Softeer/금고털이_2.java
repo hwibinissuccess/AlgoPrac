@@ -5,7 +5,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class 금고털이_1 {
+public class 금고털이_2 {
 
     public static void main(String[] args) throws IOException {
 
