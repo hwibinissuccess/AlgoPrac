@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM;
 
 import java.util.*;
 
-public class 무인도여행_3 {
+public class 무인도여행_3_SSS {
 
     static int[] dx = {-1,1,0,0};
     static int[] dy = {0,0,-1,1};
