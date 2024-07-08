@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class 미로탈출_1 {
+public class 미로탈출_2 {
 
     static String[][] map;
     static int[] dx = {-1,1,0,0};

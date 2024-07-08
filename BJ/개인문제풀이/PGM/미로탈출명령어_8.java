@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 미로탈출명령어_7 {
+public class 미로탈출명령어_8 {
 
     static int[][] map;
     static String ans;
