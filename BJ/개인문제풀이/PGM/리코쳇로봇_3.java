@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class 리코쳇로봇_2 {
+public class 리코쳇로봇_3 {
 
     int[] dr = {-1, 0, 1, 0}; //상 우 하 좌
     int[] dc = {0, 1, 0, -1};
