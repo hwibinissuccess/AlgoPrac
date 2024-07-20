@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM.해결;
 
-public class JadenCase문자열만들기 {
+public class JadenCase문자열만들기_1 {
 
     public String solution(String s) {
 
