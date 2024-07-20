@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM;
 
-public class 가장큰정사각형찾기_1 {
+public class 가장큰정사각형찾기_2 {
 
     static int[][] map;
 
