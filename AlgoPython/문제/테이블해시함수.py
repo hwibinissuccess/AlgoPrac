@@ -1,4 +1,3 @@
-from solution import *
 
 def solution(data, col, row_begin, row_end):
 
