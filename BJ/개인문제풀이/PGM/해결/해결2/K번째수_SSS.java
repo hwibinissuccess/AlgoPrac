@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM.해결.해결2;
 
 import java.util.Arrays;
 
-public class K번째수 {
+public class K번째수_SSS {
 
     public int[] solution(int[] array, int[][] commands) {
 
