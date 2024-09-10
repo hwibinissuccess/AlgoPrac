@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM.해결;
 
-public class 가운데글자가져오기 {
+public class 가운데글자가져오기_SSS {
 
     public String solution(String s) {
 
