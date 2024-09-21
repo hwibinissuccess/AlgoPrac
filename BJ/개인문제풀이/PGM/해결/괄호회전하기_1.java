@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM.해결;
 
 import java.util.Stack;
 
-public class 괄호회전하기 {
+public class 괄호회전하기_1 {
 
     public int solution(String s) {
 
