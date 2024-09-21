@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM.해결;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class 경주로건설 {
+public class 경주로건설_1 {
 
     static int[][][] visit;
     static int[][] d = {{1,0},{-1,0},{0,1},{0,-1}};
