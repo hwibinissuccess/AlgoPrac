@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM.해결;
 
 import java.util.*;
 
-public class 귤고르기 {
+public class 귤고르기_1 {
 
     public int solution(int k, int[] tangerine) {
 
