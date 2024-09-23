@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM.해결;
 
-public class 기둥과보설치 {
+public class 기둥과보설치_1 {
 
     static boolean[][] bar;
     static boolean[][] river;
