@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM.해결;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class 나누어떨어지는숫자배열 {
+public class 나누어떨어지는숫자배열_SSS {
 
     public ArrayList<Integer> solution(int[] arr, int divisor) {
 
