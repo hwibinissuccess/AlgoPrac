@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM.해결;
 
-public class 내적 {
+public class 내적_SSS {
 
     public int solution(int[] a, int[] b) {
 
