@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM.해결;
 
-public class 나머지1이되는수찾기 {
+public class 나머지1이되는수찾기_SSS {
 
     public int solution(int n) {
 
