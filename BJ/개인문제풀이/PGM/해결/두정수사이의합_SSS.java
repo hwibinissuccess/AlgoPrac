@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM.해결;
 
-public class 두정수사이의합 {
+public class 두정수사이의합_SSS {
 
     public long solution(int a, int b) {
 
