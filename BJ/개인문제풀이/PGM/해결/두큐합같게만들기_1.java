@@ -3,7 +3,7 @@ package BJ.개인문제풀이.PGM.해결;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class 두큐합같게만들기 {
+public class 두큐합같게만들기_1 {
 
     public int solution(int[] queue1, int[] queue2) {
 
