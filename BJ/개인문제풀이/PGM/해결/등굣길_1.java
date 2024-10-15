@@ -1,6 +1,6 @@
 package BJ.개인문제풀이.PGM.해결;
 
-public class 등굣길 {
+public class 등굣길_1 {
 
     public int solution(int m, int n, int[][] puddles) {
 
