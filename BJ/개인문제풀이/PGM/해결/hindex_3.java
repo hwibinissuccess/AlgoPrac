@@ -2,7 +2,7 @@ package BJ.개인문제풀이.PGM.해결;
 
 import java.util.Arrays;
 
-public class hindex_2 {
+public class hindex_3 {
 
     public int solution(int[] citations) {
 
