@@ -34,4 +34,5 @@ public class S5_1193_분수찾기_구현 {
                 cross_count++;
             }
         }
+    }
 }
