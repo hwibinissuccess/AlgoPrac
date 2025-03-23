@@ -1,4 +1,4 @@
-package coding2025.Programers.level1;
+package coding2025.Programers.level1.Java;
 
 public class 자연수뒤집어배열로만들기 {
     public int[] solution(long n) {

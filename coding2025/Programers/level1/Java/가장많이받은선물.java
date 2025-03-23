@@ -1,4 +1,4 @@
-package coding2025.Programers.level1;
+package coding2025.Programers.level1.Java;
 import java.util.*;
 
 public class 가장많이받은선물 {
