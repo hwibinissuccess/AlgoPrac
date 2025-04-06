@@ -9,6 +9,7 @@ public class 문자열다루기기본 {
 
         for(int i=0; i<s.length(); i++){
             if(s.charAt(i) < '0' || s.charAt(i)>'9') return false;
+            //if(!Character.isDigit(s.charAt(i))) return false;
         }
 
         return true;
